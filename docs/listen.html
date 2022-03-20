@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>sunspire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/listen.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./scripts/listen.js"></script>
+
+</head>
+<body>
+    <a class="back" href="./index.html">back</a>
+    <div id="filter" onclick="toggleAlbum(currentAlbum)"></div>
+    <div class="page">
+        <h1>albums</h1>
+        <div id="cover-flow">
+            <div class="album" onclick="showLinks(this)">
+                <img src="./images/tap-min.png">
+                <div class="album-options">
+                    <h3>"the ancient place"</h3>
+                </div>
+            </div>
+            <div class="album" onclick="showLinks(this)">
+                <img src="./images/rbts-min.png">
+                <div class="album-options">
+                    <h3 class="contrast">"ruins by the sea"</h3>
+                    <a class="album-option" href="https://open.spotify.com/album/0ur69SNJ9CsloE7cHvwZwP?si=sjeYzL0JQjqvZX9Z8kmb2w">spotify</a>
+                    <a class="album-option" href="https://music.apple.com/gb/album/ruins-by-the-sea/1564652381">apple music</a>
+                    <a class="album-option" href="https://soundcloud.com/jack-jazrawy-brown/sets/ruins-by-the-sea?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">soundcloud</a>
+
+                </div>
+            </div>
+            <div class="album"  onclick="showLinks(this)">
+                <img src="./images/euphoria-min.png">
+                <div class="album-options">
+                    <h3>"euphoria"</h3>
+                    <a class="album-option" href="https://open.spotify.com/album/1QgiLaHmyN3OPmH4wZh68N?si=OalH9gVSSdyT9T-jASNC7A">spotify</a>
+                    <a class="album-option" href="https://music.apple.com/gb/album/euphoria-ep/1512971420">apple music</a>
+                    <a class="album-option" href="https://soundcloud.com/jack-jazrawy-brown/sets/euphoria?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">soundcloud</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

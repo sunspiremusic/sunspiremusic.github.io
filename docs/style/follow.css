@@ -1,0 +1,43 @@
+.page{
+    margin-top: 10vh;
+    width: 70vw;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+}
+
+.social{
+    border: var(--border-width) solid black;
+    box-shadow:  var(--border-width) var(--border-width) 0px black;
+    color: white;
+
+    font-size: 30px;
+
+    margin: 10px 0px;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+.social:hover{
+    filter:grayscale(80%);
+    cursor: pointer;
+}
+
+.social:focus{
+    box-shadow:  calc(var(--border-width) - var(--click-offset)) calc(var(--border-width) - var(--click-offset)) 0px black;
+    transform: translate(var(--click-offset), var(--click-offset));
+}
+
+@media screen and (max-width: 800px) {
+    .page{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        padding: 0px 10px
+    }
+}

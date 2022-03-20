@@ -1,0 +1,48 @@
+.page{
+    margin-top: 10vh;
+    width: 70vw;
+}
+
+h1{
+    margin: 10px 0px;
+}
+
+#videos{
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+    padding-top: 30px;
+    overflow: hidden;
+    max-width: 700px;
+}
+
+.vid iframe,
+.vid object,
+.vid embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 414px;
+
+}
+
+@media screen and (max-width: 800px) {
+    #videos{
+        padding: 0px 10px;
+    }
+
+    .page{
+        margin-top: 10vh;
+        width: 100%;
+    }
+    
+}
