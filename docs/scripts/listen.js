@@ -1,5 +1,5 @@
 $(function(){
-    $('option').click((event) => event.stopPropagation())
+    $('album-option').click((event) => event.stopPropagation())
 })
 
 var albumFocussed = false;
