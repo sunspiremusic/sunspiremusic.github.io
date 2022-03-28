@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root{
@@ -10,8 +17,14 @@ body{
     margin: 0;
     padding: 0;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
     background-image: url('../images/background.png');
     background-size: cover;
@@ -23,8 +36,13 @@ body{
     margin-top: 165px;
     padding-bottom: 50px;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 h1{
@@ -41,11 +59,15 @@ h2{
     font-size: 40px;
     font-style: italic;
     background-color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
 h3.contrast{
     background-color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 .subheading{
@@ -60,7 +82,8 @@ h3.contrast{
 
 .option{
     border: var(--border-width) solid black;
-    box-shadow:  var(--border-width) var(--border-width) 0px black;
+    -webkit-box-shadow:  var(--border-width) var(--border-width) 0px black;
+            box-shadow:  var(--border-width) var(--border-width) 0px black;
     background-color: #b9003e;
     color: white;
 
@@ -80,8 +103,11 @@ h3.contrast{
 }
 
 .option:focus{
-    box-shadow:  calc(var(--border-width) - var(--click-offset)) calc(var(--border-width) - var(--click-offset)) 0px black;
-    transform: translate(var(--click-offset), var(--click-offset));
+    -webkit-box-shadow:  calc(var(--border-width) - var(--click-offset)) calc(var(--border-width) - var(--click-offset)) 0px black;
+            box-shadow:  calc(var(--border-width) - var(--click-offset)) calc(var(--border-width) - var(--click-offset)) 0px black;
+    -webkit-transform: translate(var(--click-offset), var(--click-offset));
+        -ms-transform: translate(var(--click-offset), var(--click-offset));
+            transform: translate(var(--click-offset), var(--click-offset));
 }
 
 .back{
@@ -91,7 +117,8 @@ h3.contrast{
     bottom: 20px;
 
     border: var(--border-width) solid black;
-    box-shadow:  var(--border-width) var(--border-width) 0px black;
+    -webkit-box-shadow:  var(--border-width) var(--border-width) 0px black;
+            box-shadow:  var(--border-width) var(--border-width) 0px black;
     background-color: #b9003e;
     color: white;
 
@@ -108,8 +135,11 @@ h3.contrast{
 }
 
 .back:focus{
-    box-shadow:  calc(var(--border-width) - var(--click-offset)) calc(var(--border-width) - var(--click-offset)) 0px black;
-    transform: translate(var(--click-offset), var(--click-offset));
+    -webkit-box-shadow:  calc(var(--border-width) - var(--click-offset)) calc(var(--border-width) - var(--click-offset)) 0px black;
+            box-shadow:  calc(var(--border-width) - var(--click-offset)) calc(var(--border-width) - var(--click-offset)) 0px black;
+    -webkit-transform: translate(var(--click-offset), var(--click-offset));
+        -ms-transform: translate(var(--click-offset), var(--click-offset));
+            transform: translate(var(--click-offset), var(--click-offset));
 }
 
 .footer{
